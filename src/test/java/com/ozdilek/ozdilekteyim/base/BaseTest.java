@@ -17,7 +17,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public abstract class BaseTest {
+public class BaseTest {
     protected static AppiumDriver<MobileElement> appiumDriver;
     protected static WebDriverWait appiumFluentWait;
     protected static Logger logger = Logger.getLogger(BaseTest.class);
