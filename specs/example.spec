@@ -1,8 +1,8 @@
 Ozdilekteyim UAT
 =====================
 
-;Homepage
 ##Ozdilekteyim uygulaması açılır
+;Homepage
 * Uygulamanın açıldığı kontrol edilir
 * Alışverişe başla butonuna tıklanır
 * Alışveriş sayfasının açıldığı doğrulanır
