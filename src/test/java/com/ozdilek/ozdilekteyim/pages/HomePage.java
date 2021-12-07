@@ -2,7 +2,7 @@ package com.ozdilek.ozdilekteyim.pages;
 
 import com.ozdilek.ozdilekteyim.base.BasePage;
 import com.thoughtworks.gauge.Step;
-import org.junit.jupiter.api.Assertions;
+
 import org.openqa.selenium.By;
 
 public class HomePage extends BasePage {

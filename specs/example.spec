@@ -33,7 +33,7 @@ fmlHaydi
 * Geri butonuna tıklanır
 
 ;ProductPage
-*  Ürünlerden rasgele bir ürün seçilir.
+* Ürünlerden rasgele bir ürün seçilir.
 
 ;ProductDetailPage
 * Seçilen ürün sepete eklenir.

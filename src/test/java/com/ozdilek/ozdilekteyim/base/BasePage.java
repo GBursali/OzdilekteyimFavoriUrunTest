@@ -41,8 +41,10 @@ public class BasePage extends BaseTest {
     }
 
     public void clickById(MobileElement element) {
-        waitForLoad(element).click();
-        logger.info(String.format("Clicked to the element with selector id: %s", element));
+        MobileElement mobileElement = waitForLoad(element);
+        String bounds = element.getAttribute("bounds");
+        mobileElement.click();
+        logger.info(String.format("Clicked to the element within the bounds: %s", bounds));
     }
 
     public void sendKeysBy(By selector, String keys) {
@@ -68,7 +70,6 @@ public class BasePage extends BaseTest {
         } catch (TimeoutException te) {
             return false;
         }
-        //return !appiumDriver.findElements(selector).isEmpty();
     }
 
     public String getText(By selector) {
