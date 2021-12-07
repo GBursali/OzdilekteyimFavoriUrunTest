@@ -1,9 +1,8 @@
-UAT
+Ozdilekteyim UAT
 =====================
 
-fmlHaydi
----
-;Ozdilekteyim uygulaması açılır
+;Homepage
+##Ozdilekteyim uygulaması açılır
 * Uygulamanın açıldığı kontrol edilir
 * Alışverişe başla butonuna tıklanır
 * Alışveriş sayfasının açıldığı doğrulanır

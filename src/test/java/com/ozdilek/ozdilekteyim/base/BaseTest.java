@@ -10,8 +10,6 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import io.appium.java_client.remote.MobilePlatform;
 import org.apache.log4j.Logger;
 import org.apache.log4j.xml.DOMConfigurator;
-import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -21,8 +19,7 @@ import java.net.URL;
 public class BaseTest {
     protected static AppiumDriver<MobileElement> appiumDriver;
     protected static WebDriverWait appiumFluentWait;
-    protected static Logger logger = Logger.getLogger(BaseTest.class);
-
+    protected static final Logger logger = Logger.getLogger(BaseTest.class);
 
     @BeforeScenario
     public static void setUp() throws MalformedURLException {
