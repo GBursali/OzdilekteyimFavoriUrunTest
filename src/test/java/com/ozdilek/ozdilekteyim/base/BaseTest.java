@@ -18,13 +18,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public abstract class BaseTest {
-    protected static AndroidDriver<MobileElement> appiumDriver;
+    protected static AppiumDriver<MobileElement> appiumDriver;
     protected static WebDriverWait appiumFluentWait;
     protected static Logger logger = Logger.getLogger(BaseTest.class);
 
 
     @BeforeScenario
-    public void setUp() throws MalformedURLException {
+    public static void setUp() throws MalformedURLException {
         final String deviceName = "34cda0f";
         final String appPackage = "com.ozdilek.ozdilekteyim";
         final String appActivity = appPackage + ".MainActivity";
@@ -44,7 +44,7 @@ public abstract class BaseTest {
         logger.info("-----Test flow started-------");
     }
     @AfterScenario
-    public void afterScenario() {
+    public static void afterScenario() {
         if(appiumDriver != null)
             appiumDriver.quit();
     }

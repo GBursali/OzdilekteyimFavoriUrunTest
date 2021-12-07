@@ -26,7 +26,9 @@ public class ProductPage extends BasePage {
             TouchAction t = new TouchAction(appiumDriver);
             t.press(PointOption.point(537, 1860))
                     .moveTo(PointOption.point(537, 310))
-                    .release().perform().wait(500);
+                    .release().perform();
+            TimeUnit.MILLISECONDS.sleep(500);
+
         }
     }
 

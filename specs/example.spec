@@ -1,10 +1,9 @@
-Specification Heading
+UAT
 =====================
 
-;HomePage
-“Özdilekteyim” uygulaması açılır
+fmlHaydi
 ---
-
+;Ozdilekteyim uygulaması açılır
 * Uygulamanın açıldığı kontrol edilir
 * Alışverişe başla butonuna tıklanır
 * Alışveriş sayfasının açıldığı doğrulanır
