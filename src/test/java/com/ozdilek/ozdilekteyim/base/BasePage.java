@@ -30,7 +30,7 @@ public class BasePage extends BaseTest {
             appiumFluentWait.until(ExpectedConditions.elementToBeClickable(selector));
             return selector;
         } catch (TimeoutException te) {
-            logger.info(String.format("%s elemanı bulunanadı", selector.toString()));
+            logger.info(String.format("'%s' couldnt found", selector.toString()));
             return null;
         }
     }
@@ -49,13 +49,13 @@ public class BasePage extends BaseTest {
 
     public void sendKeysBy(By selector, String keys) {
         waitForLoad(selector).sendKeys(keys);
-        logger.info(String.format("Typed %s to the '%s'", keys, selector));
+        logger.info(String.format("Typed '%s' to the '%s'", keys, selector));
     }
 
     public void assertEqualsWithSelector(By selector, String expected) {
         String actual = getText(selector);
-        Assertions.assertEquals(expected.toLowerCase(), actual.toLowerCase(), "Doğrulama başarısız");
-        logger.info(String.format("%s metni bulundu @%s", expected, selector));
+        Assertions.assertEquals(expected.toLowerCase(), actual.toLowerCase(), "Assertion failure");
+        logger.info(String.format("Text '%s' found @%s", expected, selector));
     }
 
     public MobileElement getElementFromList(By selector, int index) {
